@@ -1012,7 +1012,7 @@
         if (!str)
             return default_value;
         uint32_t value;
-        _vox_str_scanf(str, "%i", &value);
+        _vox_str_scanf(str, "%u", &value);
         return value;
     }
 
