@@ -1689,13 +1689,13 @@
                     materials.matl[material_id].media_type = ogt_media_type_absorb;
                     const char* media_type_string = _vox_dict_get_value_as_string(&dict, "_media_type", NULL);
                     if (media_type_string) {
-                        if (0 == _vox_strcmp(media_type_string,"_scatter") {
+                        if (0 == _vox_strcmp(media_type_string,"_scatter")) {
                            materials.matl[material_id].media_type = ogt_media_type_scatter;
                         }
-                        else if (0 == _vox_strcmp(media_type_string,"_emit") {
+                        else if (0 == _vox_strcmp(media_type_string,"_emit")) {
                             materials.matl[material_id].media_type = ogt_media_type_emit;
                         }
-                        else if (0 == _vox_strcmp(media_type_string,"_sss") {
+                        else if (0 == _vox_strcmp(media_type_string,"_sss")) {
                             materials.matl[material_id].media_type = ogt_media_type_sss;
                         }
                     }
